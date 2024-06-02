@@ -1,0 +1,237 @@
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+
+  --light-white: hsl(197, 24%, 94%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: grid;
+  place-content: center;
+}
+
+main.container1 {
+  background-color: white;
+  display: grid;
+  place-content: center;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  width: 375px;
+}
+
+#head {
+  display: grid;
+  margin: auto;
+  height: 80px;
+  width: 80px;
+}
+
+#hardware {
+  height: 170px;
+  width: 230px;
+  margin-top: 2rem;
+}
+
+.paragraph {
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+h2 {
+  margin-top: 7rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+.section-center {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn1 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.gren {
+  border: none;
+  padding: 0.6rem;
+  border-radius: 25px;
+  color: white;
+  background-color: var(--Strong-Cyan);
+}
+
+.blu {
+  border: none;
+  padding: 0.6rem;
+  border-radius: 25px;
+  color: white;
+  background-color: var(--Light-Blue);
+}
+
+.logo {
+  margin-top: 4rem;
+}
+
+.logsign {
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+  margin-top: 7rem;
+}
+
+.dwn {
+  margin-bottom: 7rem;
+}
+
+footer {
+  background-color: var(--light-white);
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.teet {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.teete {
+  display: flex;
+  gap: 2rem;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+.foot:hover{
+  cursor: pointer;
+  color: var(--Strong-Cyan);
+}
+
+.teete:hover{
+  .face{
+    cursor: pointer;
+    color: green;
+  }
+  .twit{
+    cursor: pointer;
+    color: green;
+  }
+  .gram{
+    cursor: pointer;
+    color: green;
+  } 
+}
+
+@media screen and (min-width: 630px) {
+  body {
+    display: grid;
+    background-color: white;
+  }
+
+  main.container1 {
+    display: grid;
+    width: 1262px;
+    text-align: center;
+  }
+
+  #hardware {
+    height: 380px;
+    width: 500px;
+  }
+
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gren,
+  .blu {
+    padding: 0.7rem 2.3rem;
+  }
+
+  .section-float {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .float-text {
+    width: 350px;
+    text-align: left;
+    margin-top: -3rem;
+  }
+
+  .logo {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+    padding: 1rem 4rem;
+    width: 1000px;
+  }
+
+  .section-center,
+  .primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    width: 500px;
+    box-sizing: border-box;
+  }
+
+  .logsign {
+    display: flex;
+    gap: 3rem;
+  }
+
+
+
+  .iconic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .text {
+    display: flex;
+    justify-content: right;
+    gap: 4rem;
+  }
+
+  .teet {
+    text-align: left;
+  }
+
+  .teete {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+  }
+}
